@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Pode-se referenciar links através da tag &lt;a&gt; (anchor). O conteúdo da tag será o texto que, ao clicar, redirecionará para o link. A URL do link deve ser inserida no parâmetro <code>href=""</code></p>
+    <a href="https://media1.tenor.com/m/99LsQ_CawTQAAAAd/crocodile-spinning.gif">Este texto está dentro da tag &lt;a&gt;, e irá sobrescrever esta página com a URL do <code>href=""</code>.</a>
+    <p>Um detalhe importantíssimo é que, ao clicar no link, a página automaticamente será direcionada para a URL, tirando o usuário do seu site.</p>
+    <p>Podemos garantir que, ao clicar no link, abra uma nova aba ao invés de sobrescrever a página atual usando dois parâmetros extra da tag &lt;a&gt;: <code>target="_blank</code> e <code>rel="external"</code>.</p>
+    <a href="https://media1.tenor.com/m/mdN4NvEcbhkAAAAd/doggy-lizard-reptile.gif" target="_blank" rel="external">Este texto, por exemplo, irá abrir uma nova aba ao invés de sobrescrever a página atual.</a>
+    <h1>Usando links internos</h1>
+    <p>Esta é a primeira página do site. Há uma <a href="pag002.html" rel="next">segunda página.</a></p>
+    <p>Há também uma <a href="paginas/pag003.html" target="_self" rel="next">terceira página</a>, clique no link para ser levado à ela.</p>
+    <p>Ao referenciar um link de um site não confiável, como spam, ou que não queira validar para o mecanismo de pesquisa (puramente por SEO), utiliza-se o parâmetro <code>rel="nofollow"</code>. Por exemplo:</p>
+    <a href="https://m.media-amazon.com/images/I/41zVkERJY2L._BO30,255,255,255_UF900,850_SR1910,1000,0,C_QL100_.jpg" target="_blank" rel="nofollow">Este link não é validado pela search engine.</a>
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="pdf/arquivoTeste.pdf" download="arquivoTeste.pdf" type="applicatoin/pdf">Baixar PDF</a></li> <!-- Se preenche href com # quando não há um link para colocar ainda. -->
+        <li><a href="pdf/arquivoTeste.rar" download="arquivoTeste.rar">PDF compactado</a></li>
+    </ul>
+</body>
+</html>

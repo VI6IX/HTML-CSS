@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <p>Através da tag &lt;ol&gt;, pode-se criar uma lista ordenada ("ordered list"). Por exemplo:</p>
+    <ol>
+        <li>Item número 1</li>
+        <li>Item número 2</li>
+        <li>Item número 3</li>
+        <li>Item número 4</li>
+    </ol>
+    <p>Cada item da lista deve estar entre tags &lt;li&gt; ("list item"). Quando os &lt;li&gt; estão dentro de uma tag &lt;ol&gt;, são list items ordenados de acordo com a ordem de aparição no HTML.</p>
+    <p>As listas ordenadas &lt;ol&gt; contém o parâmetro <code>type=""</code>, que determina a forma como a lista é ordenada, sendo uma lista numérica, alfabética ou em números romanos. Por exemplo:</p>
+    <ol type="a">
+        <li>Item número 1</li>
+        <li>Item número 2</li>
+        <li>Item número 3</li>
+        <li>Item número 4</li>
+    </ol>
+    <p>Acima, uma lista ordenada alfabética. Abaixo, uma lista em algarismos romanos:</p>
+    <ol type="i">
+        <li>Item número 1</li>
+        <li>Item número 2</li>
+        <li>Item número 3</li>
+        <li>Item número 4</li>
+    </ol>
+    <p><strong>Importante ressaltar que o parâmetro <code>type=""</code>, embora ainda funcional, deve ser considerado obsoleto por referir-se ao estilo de ordenação da lista. Como é possível fazer a mesma mudança através de CSS, é recomendado usar CSS para alterar o tipo de ordenação da lista.</strong></p>
+    <h2>Listas Não-Ordenadas</h2>
+    <p>As listas não-ordenadas utilizam a tag &lt;ul&gt; ("unordered list").</p>
+    <ul>
+        <li>Item número 1</li>
+        <li>Item número 2</li>
+        <li>Item número 3</li>
+        <li>Item número 4</li>
+    </ul>
+    <p>Da mesma forma, listas não-ordenadas também podem ter seus estilos alterados através do mesmo parâmetro <code>type=""</code>, porém, é recomendado que se use CSS para isto.</p>
+    <ul type="square">
+        <li>Item número 1</li>
+        <li>Item número 2</li>
+        <li>Item número 3</li>
+        <li>Item número 4</li>
+    </ul>
+    <ul type="circle">
+        <li>Item número 1</li>
+        <li>Item número 2</li>
+        <li>Item número 3</li>
+        <li>Item número 4</li>
+    </ul>
+    <h2>Juntando listas</h2>
+    <ol>
+        <li>Tópico número 1</li>
+        <ul>
+            <li>Item número 1</li>
+            <li>Item número 2</li>
+            <li>Item número 3</li>
+            <li>Item número 4</li>
+        </ul>
+        <li>Tópico número 2</li>
+        <ul>
+            <li>Item número 1</li>
+            <ul>
+                <li>Sub-Item número 1</li>
+                <li>Sub-Item número 2</li>
+                <li>Sub-Item número 3</li>
+            </ul>
+            <li>Item número 2</li>
+            <li>Item número 3</li>
+            <li>Item número 4</li>
+        </ul>
+    </ol>
+    <h2>Listas de Definição</h2>
+    <p>As listas mais únicas são as listas de definição, usando a tag &lt;dl&gt; ("definition list"). Cada item de uma lista de definição usa duas tags; uma tag para o ítem (&lt;dt&gt;, "definition term") e uma tag para sua descrição (&lt;dd&gt;, "definition description").</p>
+    <dl>
+        <dt>Item número 1</dt>
+        <dd>Definição de Item número 1.</dd>
+        <dt>Item número 2</dt>
+        <dd>Definição de Item número 2.</dd>
+        <dt>Item número 3</dt>
+        <dd>Definição de Item número 3.</dd>
+    </dl>
+</body>
+</html>

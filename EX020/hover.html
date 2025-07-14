@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            /* Usar ">" significa que está fazendo alterações no estilo SOMENTE do elemento marcado dentro do
+            elemento antes do ">"; nesse caso, está alterando exclusivamente o p dentro de div.
+            Ou seja, p é considerado child de div.
+            */
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            
+        }
+
+        div:hover {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <div>
+        Passe o mouse aqui.
+        <p>texto escondido woohoohh.....</p>
+    </div>
+    <p>Fim do exemplo.</p>
+</body>
+</html>

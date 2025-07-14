@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/* 
+    id = #nomeID
+    class = .nomeCLASS
+    No caso de classes, não é necessário mencionar o parente da classe, embora ambos
+    "parente.nomeCLASS" e ".nomeCLASS" funcionem.
+*/
+
+body {
+    background-color: rgb(161, 133, 109);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+h1 {
+    color: rgb(78, 28, 9)
+}
+
+h1#principal {
+    background-color: rgb(78, 28, 9);
+    color: rgb(161, 133, 109);
+    text-align: center;
+}
+
+h2 {
+    color: rgb(107, 73, 60);
+}
+
+.basico {
+    color: rgb(107, 109, 86);
+}
+
+.intermediario {
+    color: rgb(107, 91, 60);
+}
+
+.avancado {
+    color: rgb(107, 66, 60);
+}
+
+.destaque {
+    background-color: rgba(141, 112, 78, 0.671);
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}

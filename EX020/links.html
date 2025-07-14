@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(157, 168, 182)
+        }
+
+        a {
+            color: rgb(175, 64, 166);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: rgb(116, 64, 175);
+        }
+
+        a:hover {
+            color: rgb(143, 219, 177);
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(115, 255, 127);
+        }
+        
+        /* O sinal duplo de dois pontos :: representa os pseudo-elementos.
+        Funcionam de forma similar ás pseudo-classes; da mesma forma que o pseudo-classe funciona como
+        se acessando um estado de elemento no CSS, os pseudo-elementos funcionam como se estivesse fazendo
+         alterações ao estilo de um elemento que não foi criado (no caso abaixo, o content)
+        */
+        a::before {
+            content: "[link] ";
+            color: rgba(255, 255, 255, 0.527);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/VI6IX" target="_blank">Github</a></li>
+        <li><a href="https://x.com/deVict6r" target="_blank">Twitter</a></li>
+        <li><a href="https://x.com/deVict6r" target="_blank">Artstation</a></li>
+    </ul>
+</body>
+</html>

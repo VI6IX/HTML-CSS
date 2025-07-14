@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte</h2>
+    <p>O comando <code>documento.getElementById('teste')</code> é escrito em linguagem JavaScript. Note como o método ficou marcado com fonte monoespaçado, o que é feito através da tag &lt;code&gt;. Bem útil para menções de funções, variáveis, etc.</p>
+    <p>Para blocos de código, entretanto, é necessário colocar a tag &lt;code&gt; dentro de outra tag; &lt;pre&gt;. Por exemplo:</p>
+    <pre>
+        <code>
+    var iVar = 0
+    for (iVar = 0; iVar &lt;= 100; iVar += 1) {
+        print(iVar);
+        print(`Valor de 1 incrementado à ${iVar}`);
+    }
+    if (iVar == 100) {
+        print('Contagem realizada.')
+    }
+        </code>
+    </pre>
+    <h2>Citações</h2>
+    <p>Um texto pode ser marcado como <q>citação</q> através da tag &lt;q&gt;, que introduz aspas.</p>
+    <h2>Citações completas</h2>
+    <p>Para blocos de citações, usa-se a tag &lt;blockquote&gt;, que desloca e isola o texto.</p>
+    <blockquote>
+        Suponhamos que isto seja uma caveira. Mas o QUÊ significa? Uma bandeira de piratas? Heh... NÃO! Um anúncio de um cemitério? Tampouco. Esta caveira significa... PERIGO! Ouviram? PE-RI-GO! Por exemplo, se virem uma caveira em uma garrafa, significa que esta garrafa contém veneno. E se vocês beberem? Em um minuto, vão começar a se retorcer como lagartixa com cãibra, e depois vão esbugalhando os olhos, a língua... pra fora.... até que, até que.... MORREM! Vão pro beleléu!
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Podemos marcar siglas e/ou abreviações usando a tag &lt;abbr&gt;, que é uma tag semântica, logo, deve ser usada exclusivamente no <abbr title="Hypertext Markup Language">HTML</abbr> e não no <abbr title="Cascading Style Sheet">CSS</abbr>.</p>
+</body>
+</html>

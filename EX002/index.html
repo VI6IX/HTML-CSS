@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parágrafos</title>
+</head>
+<body>
+    <h1>Parágrafos, Quebras de Linha e Símbolos</h1>
+    <hr>
+    <p>Você pode escrever parágrafos utilizando a tag &lt;p&gt;. Como o nome sugere, parágrafos irão agrupar um bloco de texto em um parágrafo. Usar várias tags &lt;p&gt; criará mais de bloco de texto, o que cria uma quebra de linha natural.</p>
+    <p>Para inserir uma quebra de linha, entretanto, pode-se usar a tag &lt;br&gt;, que criará uma espaço vazio entre o conteúdo e o conteúdo apresentado abaixo dele no HTML. Dependendo do contexto, pode-se usar &lt;hr&gt;, <br> que além da quebra de linha, insere uma linha horizontal entre o conteúdo. Útil, por exemplo, entre o título e o corpo de um texto.</p>
+    Este linha foi escrita sem uso da tag &lt;p&gt; e sem quebra de linha (&lt;br&gt;) entre esta e o parágrafo acima.
+    <br>
+    Já esta, foi escrita também sem o uso de &lt;p&gt;, porém há uma quebra de linha com a tag &lt;br&gt; separando este texto da linha acima. Como o texto solto (sem tag &lt;p&gt;) não insere uma quebra de linha, a tag &lt;br&gt; impede este texto de estar na mesma linha que o anterior.
+    <p>E por fim, esta linha é um parágrafo (logo, usando a tag &lt;p&gt;), sem uso de &lt;br&gt; separando este parágrafo da linha acima.</p>
+    <br>
+    <p>E finalmente, um parágrafo (com tag &lt;p&gt;) separado do parágrafo acima por uma tag &lt;br&gt;, que insere uma quebra de linha extra.</p>
+    <hr>
+    À respeito de símbolos especiais, usa-se o caractere especial &amp; seguido pela abreviação do símbolo, como, por exemplo, "lt" ou "gt" para "&lt;"" ("less than") e "&gt;"" ("greater than"); o nome do símbolo, o qual se aplica pricipalmente à moedas específicas, como no caso
+    <br>do símbolo do euro (&euro;), a qual se escreve "&amp;euro"; ou, por fim, o valor unicode para emoji, o qual deve ser colocado em formato "&amp;#x[UNICODE]", por exemplo: &amp;#x1F40A (&#x1F40A;).
+    <p>Depois do símbolo &amp; e o identificador do símbolo (abreviação, nome ou valor unicode) deve-se adicionar um ponto e vírgula (";") para identificação da sintaxe e, consequentemente, do símbolo.</p>
+    Segue, abaixo, todos os símbolos utilizados nesta explicação, além de símbolos relevantes para futuros projetos:
+    <hr>
+    (&amp;) "&amp;amp;" <br>
+    (&lt;) "&amp;lt;" <br>
+    (&gt;) "&amp;gt;" <br>
+    (&euro;) "&amp;euro;" <br>
+    (&reg;) "&amp;reg;" <br>
+    (&copy;) "&amp;copy;" <br>
+    (&trade;) "&amp;trade;" <br>
+    (&rightarrow;) "&amp;rightarrow;" OU "&amp;rarr;" <br>
+    <p>Obviamente, existem sites que incluem listas com todos os símbolos disponíveis em HTML e seus códigos específicos, como <a href="https://www.w3schools.com">W3Schools</a> para símbolos em geral, e <a href="https://emojipedia.org">Emojipedia</a> para emojis e seus valores unicode.</p>
+    <h1>&#x1F40A;</h1>
+</body>
+</html>

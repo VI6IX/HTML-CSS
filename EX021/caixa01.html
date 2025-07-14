@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: lightgray;
+            /* Abaixo, o width e hegiht, são chamados de box-sizing, que determinam o tamanho da caixa (isto é, o conteúdo) no box-modelling.
+             */
+            width: 300px;
+            height: 300px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: darkgrey;
+            
+            padding: 20px 10px 10px 10px;
+            /* Quando as margens horizontais são configuradas como auto, elas são centralizadas automaticamente, independente
+            do tamanho da página.
+            */
+            /* Quando se usa o shorthand apontando somente dois valores, é lido como vertical e horizontal. Nesse caso, há
+            20px de padding vertical (top, bottom) e padding automático na horizontal (right, left).
+             */
+            margin: 20px auto;
+        }
+
+        a {
+            /* Links são caixas in-line level, porém, através do "display", pode-se configurar links para box-level. Da mesma forma, pode-se configurar box-level para inline. */
+            display: block;
+            border-width: 2px;
+            border-style: solid;
+            border-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, porém os <a href="#">links são exemplos de caixas inline-level</a>. Veremos como tudo isso funciona.</p>
+</body>
+</html>

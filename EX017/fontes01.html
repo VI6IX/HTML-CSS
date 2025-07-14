@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            /* Abaixo, definir a font-family como mais de uma opção é uma "safe combination", 
+            onde o dispositivo irá configurar a font-family para a primeira opção que encontrar dessa lista.
+            Sempre termine uma safe combination com uma família "genérica", como serif ou sans-serif.
+            */
+            font-family: sans-serif;
+
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            W3Schools recomenda, para font-size, px e em
+            16px = 1em (GERALMENTE)
+            */
+            font-size: 16px;
+        }
+
+        h1 {
+            /* "Shorthand Font" é um método de atribuição de fontes através de uma só linha, onde se aplica
+            o estilo, peso, tamanho e família da fonte de uma só vez
+            font: font-style -> font-weight -> font-size -> font-family
+            AO INVÉS DE
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 3em;
+            font-family: "Times New Roman", serif;
+            
+            Não é necessário mudar todas as características da fonte, porém, é MANDATÓRIO manter essa ordem
+            font: italic "Times New Roman", serif;
+            */
+            font: italic bolder 3em "Times New Roman", serif;
+            text-decoration: underline;
+        }
+
+        h2 {
+            font-family: serif;
+            font-weight: bolder;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: normal;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequuntur repudiandae ullam vel necessitatibus dolores, veniam laudantium impedit sapiente soluta nobis exercitationem alias voluptatem mollitia nihil. Adipisci repellat eum corporis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos reprehenderit illo similique! Qui illo quos molestias, obcaecati eligendi odit veniam vitae blanditiis eos esse a excepturi cumque autem repudiandae vel.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa placeat harum, architecto molestias ex quod in accusantium cupiditate fugit error rem accusamus repudiandae ratione necessitatibus recusandae fuga quis earum quasi!</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad cupiditate a et at vitae? Sequi, est aliquid distinctio repellat reprehenderit consequatur error nemo nihil nam ducimus, unde cupiditate optio vel! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ab architecto non delectus fugiat adipisci culpa, molestiae facilis magnam quis, doloremque vero ipsum, exercitationem repudiandae mollitia voluptatem id porro aperiam!</p>
+</html>
