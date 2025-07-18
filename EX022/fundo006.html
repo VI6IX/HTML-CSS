@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
-            height: 97vh;
-            background-color: black;
-            background-image: url("imagens/wallpaper002.jpg");
-            background-position: center top;
-            background-repeat: no-repeat;
+            /* Background Shorthand
+                color > image > position > repeat > [size] > attachment
+                background-size ainda não é aceito pelos navegadores, é recomendado, caso usar o shorthand de background, pule o size e coloque-o separadamente
+            */
+            background: black url("imagens/wallpaper002.jpg") center center no-repeat fixed;
             background-size: cover;
+
         }
 
         main {
